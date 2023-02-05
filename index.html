@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>Momemtum</title>
+  </head>
+  <body>
+    <div id="main">
+      <h2 class="clock">00:00</h2>
+      <form class="login-form hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <button>Log In</button>
+      </form>
+      <div class="greeting hidden">
+      
+      </div>
+      <div class="quotes hidden">
+        <span class="quote"></span>
+        <span class="author"></span>
+      </div>
+    </div>
+
+    <form class="todo todoForm hidden">
+      <input
+        type="text"
+        class="todoInput"
+        placeholder="write a todo and press enter"
+        required
+      />
+      <div class="due">
+        <div class="check"> <input type="checkbox" class="box" name="due"></input></div>
+       
+        <div class="date">
+          <input
+          class="date"
+          type="date"
+          placeholder="when is due date?"
+        />
+        <button class="date">save</button>
+        </div>
+        
+      </div>
+     
+    </form>
+
+    <div class='content hidden'>
+      <div class="everything">
+        <h3 class="subtitle">
+          my todos
+        </h3>
+        <div class="list">
+
+        </div>
+      </div>
+      <div class="today">
+        <h3 class="subtitle">
+          today's task
+        </h3>
+        <div class="list">
+
+        </div>
+          
+          
+          
+
+      </div>
+      <div class="weather">
+        <h3 class="subtitle">
+        Weather
+      </h3>
+      <div class="iconbox">
+        <div class="status">
+          <div class="text">loading...</div>
+          <img class="icon hidden"/>
+        </div>
+        <div class="city">loading...</div>
+      </div>
+    </div>
+
+  
+    <script src="js/quotes.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
